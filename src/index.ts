@@ -10,6 +10,7 @@ export interface GenerateConfig {
   dynamicImport?: boolean
   chunkNamePrefix?: string
   nested?: boolean
+  patterns?: Array<string>
 }
 
 export function generateRoutes({
@@ -18,8 +19,8 @@ export function generateRoutes({
   dynamicImport = true,
   chunkNamePrefix = '',
   nested = false,
+  patterns = ['**/*.vue', '!**/__*__.vue', '!**/__*__/**'],
 }: GenerateConfig): string {
-  const patterns = ['**/*.vue', '!**/__*__.vue', '!**/__*__/**']
 
   const pagePaths = fg.sync(patterns, {
     cwd: pages,

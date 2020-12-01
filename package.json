@@ -1,8 +1,8 @@
 {
-  "name": "vue-route-generator",
+  "name": "@ycmfe/vue-route-generator",
   "version": "0.5.1",
   "author": "katashin",
-  "description": "Vue Router route config generator",
+  "description": "fork by vue-route-generator",
   "keywords": [
     "Vue",
     "Vue Router",
@@ -15,11 +15,11 @@
   "files": [
     "lib"
   ],
-  "homepage": "https://github.com/ktsn/vue-route-generator",
-  "bugs": "https://github.com/ktsn/vue-route-generator/issues",
+  "homepage": "https://github.com/ycmfe/vue-route-generator.git",
+  "bugs": "https://github.com/ycmfe/vue-route-generator/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ktsn/vue-route-generator.git"
+    "url": "https://github.com/ycmfe/vue-route-generator.git"
   },
   "scripts": {
     "prepublishOnly": "npm run clean && npm run test && npm run build",
